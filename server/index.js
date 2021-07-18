@@ -17,13 +17,14 @@ for(let i = 0 ; i < 3; i++) {
   const publicKey = key.getPublic().encode('hex');
   console.log(publicKey + " with a private key of " + key.getPrivate().toString(16) + " has a balance of 100");
   balances[publicKey] = 100;
-}
+
 
 console.log({
   privateKey: key.getPrivate().toString(16),
   publicX: key.getPublic().x.toString(16),
   publicY: key.getPublic().y.toString(16),
 });
+}
 
 //old balances
 /*const balances = {
